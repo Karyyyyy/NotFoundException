@@ -136,6 +136,7 @@ public class ProductManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void SearchEmptyProducts() {
         ProductRepository repository = new ProductRepository();
@@ -147,6 +148,7 @@ public class ProductManagerTest {
         Product[] expected = {};
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void shouldOneProduct() {
         ProductRepository repository = new ProductRepository();
@@ -161,6 +163,7 @@ public class ProductManagerTest {
         Product[] expected = {};
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void shouldTwoProducts() {
         ProductRepository repository = new ProductRepository();

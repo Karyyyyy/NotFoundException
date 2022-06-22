@@ -32,8 +32,9 @@ public class ProductRepositoryTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public void addProducts(){
+    public void addProducts() {
         ru.netology.repository.ProductRepository repository = new ru.netology.repository.ProductRepository();
         repository.save(books1);
         repository.save(books2);
@@ -46,8 +47,9 @@ public class ProductRepositoryTest {
         Product[] expected = {books1, books2, books3, smartphone1, smartphone2, smartphone3};
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public void remove2(){
+    public void remove2() {
         ru.netology.repository.ProductRepository repository = new ru.netology.repository.ProductRepository();
         repository.save(books1);
         repository.save(books2);
